@@ -1,0 +1,355 @@
+.function_coverer{
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  height: var(--height-footer);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.grid_icon_cover{ 
+  width: 48px;
+  height: 48px;
+}
+
+.add_member{
+  width: 48px;
+  height: 48px;
+}
+
+.main_footer{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.function_camera{
+  position: relative;
+}
+
+.function_call{
+  position: relative;
+}
+
+.call_icon_cover{
+  width: 48px;
+  height: 48px;
+}
+
+.camera_icon_cover{
+  width: 48px;
+  height: 48px;
+}
+
+.audio_icon_cover{
+  width: 48px;
+  height: 48px;
+}
+
+.setting_icon_cover{
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.setting_change .grid_icon{
+  fill: var(--light);
+}
+
+.arrow_up{
+  position: relative;
+}
+.arrow_up_icon{
+opacity: 0.4;
+}
+
+.arrow_up::before{
+  content: '';
+  display: block;
+  height: calc(100% - 10px);
+  width: 1px;
+  background-color: var(--light);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.arrow_up_icon:hover{
+  opacity: 1;
+}
+
+.camera_icon_cover:hover, .call_icon_cover:hover, .audio_icon_cover:hover{
+  opacity: 0.7;
+}
+
+.popup_camera{
+  position: absolute;
+  bottom: calc(100% + 4px);
+  background-color: rgba(10,10,10,0.85);
+  color: var(--light);
+  right: 0;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.popup_audio{
+  position: absolute;
+  bottom: calc(100% + 4px);
+  background-color: rgba(10,10,10,0.85);
+  color: var(--light);
+  left: 0;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.camera_list{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity:0;
+    z-index: -100;
+  }
+  to {
+    opacity:1;
+    z-index: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide_in {
+  animation: slideIn 0.4s forwards;
+}
+
+.slide_out {
+  animation: slideOut 0.4s forwards;
+}
+
+.camera_item{
+  font-size: 0.9rem;
+  
+}
+
+.camera_item:hover{
+  background-color: var(--light);
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.camera_item + .camera_item {
+  margin-top: 8px;
+}
+
+.modal_icon{
+  left: 50%;
+  top: calc(-100% - 1rem);
+  transform: translateX(-50%);
+}
+
+.camera_item:first-child{
+  border-top-right-radius: 0.375rem;
+  border-top-left-radius: 0.375rem;
+}
+
+.camera_item:last-child{
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.camera_text{
+  white-space: nowrap;
+  margin-right: 8px;
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hand_icon_cover{
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.search_input{
+  outline: none;
+}
+
+.modal_header .btn-close{
+  width: 20px;
+}
+
+.modal_title{
+  font-size: 1rem!important;
+  color: var(--text)!important;
+}
+
+.search_input{
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+
+.input_cover::before{
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-color: var(--dark);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* .checkbox_member{
+  display: none;
+} */
+
+/* Tùy chỉnh giao diện checkbox */
+.checkbox_member {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #000; /* Màu viền */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Tùy chỉnh giao diện checkbox khi được chọn */
+.checkbox_member:checked {
+  background-color: var(--primary); /* Màu nền khi được chọn */
+}
+
+/* Pseudo-element ::before để tạo dấu check */
+.checkbox_member::before {
+  content: '\2713'; /* Unicode của dấu check */
+  font-size: 20px;
+  color: #fff; /* Màu của dấu check */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* Hiển thị dấu check khi checkbox được chọn */
+.checkbox_member:checked::before {
+  display: block;
+}
+
+.button_cancel_member{
+  font-size: 0.9rem;
+}
+
+.button_cancel_member:hover{
+  opacity: 0.7;
+}
+
+.button_accept_member{
+  font-size: 0.9rem;
+}
+
+.container_member{
+  width: 50%;
+  max-height: 60vh;
+  overflow-y: auto;  
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.container_member::-webkit-scrollbar {
+  width: 2px;
+}
+
+.container_member::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.container_member::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.text_account{
+  width: 100%;
+  overflow: hidden;
+}
+
+.text_account_choice{
+  width: calc(100% - 92px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button_close{
+  color: #d20f0f; 
+  width: 20px;
+  height: 20px;
+}
+
+.button_close:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.container_setting{
+  max-height: 60vh;
+  overflow-y: auto;  
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.container_setting::-webkit-scrollbar {
+  width: 2px;
+}
+
+.container_setting::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.container_setting::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.item_choice_setting{
+  cursor: pointer;
+}
+
+body .item_choice_setting:hover{
+  border-color: var(--dark)!important;
+}
+
+.item_setting:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.option_choice_setting{
+  position: absolute;
+  display: block;
+  width: calc(100% - 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.option_choice_micro{
+  bottom: calc(100% + 4px);
+}
+
+.option_choice_camera{
+  top: calc(100% + 4px);
+}

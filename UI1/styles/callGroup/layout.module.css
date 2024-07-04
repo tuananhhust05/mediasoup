@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+  background-color: rgba(10,10,10,0.85);
+  height: var(--height-body);
+  overflow: hidden;
+}

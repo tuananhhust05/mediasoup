@@ -1,0 +1,26 @@
+@keyframes heart-fly-1 {
+  
+  0%   {
+    opacity: 0.8;
+    // transform: translateY(0);
+    bottom: 0;
+    }
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 100px);
+        // transform: translateY(-2000%);
+    }
+}
+
+$animation-time: 3s ease-in-out;
+
+.add-heart{
+  z-index: 100000;
+  user-select: none;
+  position: absolute;
+  font-size: 2rem;
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+    animation: heart-fly-1 $animation-time;
+}

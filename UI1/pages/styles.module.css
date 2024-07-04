@@ -1,0 +1,442 @@
+.body{
+    height: 100%;
+    width: auto;
+}
+.headerContainer{
+
+}
+.header{
+    background-color: rgba(255,255,255,1);
+    position: fixed;
+    left: 0;
+    right: 0;
+    font: 13px/27px Roboto,Arial,sans-serif;
+    z-index: 986;
+    display: block;
+    color: black;
+    min-width: 160px;
+    transition: box-shadow 250ms;
+}
+.headerChild{
+    min-width: 0;
+    padding: 8px;
+    transition: background-color .4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logoContainer{
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    overflow: hidden;
+    padding-right: 30px;
+    box-sizing: border-box;
+    height: 48px;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-user-select: none;
+}
+.logoParrent{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 2px;
+    -webkit-user-select: none;
+}
+.logoChild{
+    padding-left: 12px;
+    line-height: normal;
+    position: relative;
+}
+.logo{
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+}
+.logoImage{
+    /* width: 124px;
+    height: 40px; */
+    border: 0;
+    vertical-align: middle;
+}
+.logoText{
+    padding-left: 4px;
+    color: #5f6368;
+    opacity: 1;
+    display: inline-block;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.dateContainer{
+    justify-content: space-between;
+    height: 48px;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-user-select: none;
+}
+.dateParrent{
+    line-height: 0;
+    -webkit-user-select: none;
+}
+.dateChild{
+    display: table-cell;
+    height: 48px;
+    vertical-align: middle;
+    text-align: initial;
+}
+.date{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: rgb(95,99,104);
+    margin-right: 0.75rem;
+}
+.headerIcon{
+    display: inline-flex;
+}
+.headerIconChild{
+    display: inline-flex;
+    color: var(--gm-secondary-icon-color,rgb(95,99,104));
+}
+.headerIconChildDetail{
+    position: relative;
+    overflow: visible;
+}
+.headerIconFirstChild{
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    fill: currentColor;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 0;
+    overflow: visible;
+}
+.headerIconSecondChild{
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    fill: currentColor;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 0;
+    overflow: visible;
+}
+.headerIconThirdChild{
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    fill: currentColor;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 0;
+    overflow: visible;
+}
+.googleIcon{
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+.container{
+    margin-left: 0;
+    height: auto;
+    position: relative;
+    min-height: 100%;
+    display: block;
+    overflow-y: hidden;
+    z-index: 1;
+}
+.mainbody{
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+.content{
+    height: calc(100vh - 4rem);
+    min-height: 100%;
+    width: 100vw;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+.mainContent{
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-evenly;
+    min-height: 100%;
+    overflow: auto;
+    width: 100vw;
+}
+.leftContent{
+    display: inline-flex;
+    flex-basis: 35rem;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+}
+.leftHeader{
+    font-family: "Google Sans Display",Roboto,Arial,sans-serif;
+    line-height: 3.25rem;
+    font-size: 2.75rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+.leftDetailText{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: rgb(95,99,104);
+    color: var(--gm-color-caption,rgb(95,99,104));
+    max-width: 30rem;
+    padding-bottom: 3em;
+    text-align: center;
+}
+.leftActionContainer{
+    align-self: flex-start;
+    width: 100%;
+}
+.leftActionArea{
+    display: flex;
+    flex-wrap: wrap;
+}
+.createRoomContainer{
+    position: relative;
+    overflow: visible;
+}
+.createRoomButton{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    border: none;
+    line-height: inherit;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: visible;
+    vertical-align: middle;
+    background: transparent;
+    margin-top: 6px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform,opacity;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    height: 3em;
+    margin-bottom: 1em;
+    margin-right: 1.5em;
+    white-space: nowrap;
+    outline: 1px solid transparent;
+    transition: border .28s cubic-bezier(.4,0,.2,1),box-shadow .28s cubic-bezier(.4,0,.2,1);
+    box-shadow: none;
+    padding: 0 16px 0 12px;
+    font-size: 1rem;
+    background-color: var(--gm-fillbutton-container-color,rgb(26,115,232));
+    color: var(--gm-fillbutton-ink-color,#fff);
+    border-radius: 5px;
+}
+.joinRoomArea{
+    display: inline-flex;
+    min-width: 17em;
+    flex: 1 1 12em;
+}
+.joinRoomInputArea{
+    margin-top: 0.375rem;
+    max-width: 20em;
+    padding-right: 0.5em;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+.joinRoomInputLabel{
+    padding-right: max(16px,var(--mdc-shape-small,4px));
+    padding-left: 0;
+    height: 48px;
+    overflow: visible;
+    border-top-left-radius: var(--mdc-shape-small,4px);
+    border-top-right-radius: var(--mdc-shape-small,4px);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    display: inline-flex;
+    align-items: baseline;
+    padding: 0 16px;
+    position: relative;
+    box-sizing: border-box;
+    will-change: opacity,transform,color;
+}
+.joinRoomSpan{
+    --mdc-ripple-fg-size: 147px;
+    --mdc-ripple-fg-scale: 1.7757265292637807;
+    --mdc-ripple-fg-translate-start: 56.487518310546875px, -45.300018310546875px;
+    --mdc-ripple-fg-translate-end: 49.70000457763672px, -49.5px;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: left;
+    pointer-events: none;
+    border: solid 1px #000;
+    border-radius: 5px;
+}
+.joinRoomKeyboardIcon{
+    margin-left: 4px;
+    margin-right: 4px;
+    align-self: center;
+    font-size: 24px;
+    color: rgb(95,99,104);
+}
+.joinRoomInput{
+    -webkit-font-smoothing: antialiased;
+    text-decoration: var(--mdc-typography-subtitle1-text-decoration,inherit);
+    text-transform: var(--mdc-typography-subtitle1-text-transform,inherit);
+    transition: opacity .15s 0ms cubic-bezier(.4,0,.2,1);
+    width: 100%;
+    min-width: 0;
+    border-radius: 0;
+    background: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+}
+.joinRoomButton{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    border: none;
+    line-height: inherit;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: visible;
+    vertical-align: middle;
+    background: transparent;
+    margin-top: 6px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform,opacity;
+    border-radius: 4px;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1em;
+    height: 3em;
+    margin-bottom: 1em;
+    white-space: nowrap;
+    outline: 1px solid transparent;
+    cursor: default;
+    pointer-events: none;
+    color: var(--gm-colortextbutton-disabled-ink-color,rgba(60,64,67,.38));
+}
+@media (max-width:900px){
+    .dateParrent{
+        display: none;
+    }
+    .leftHeader{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .leftDetailText{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .leftActionArea{
+        flex-direction: column;
+    }
+    .createRoomContainer{
+        text-align: center;
+    }
+    .joinRoomArea{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .createRoomButton{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}

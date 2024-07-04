@@ -1,0 +1,133 @@
+.video_coverer{
+  height: 100%;
+  width: 100%;
+  padding-left: 4px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button_right{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.button_right:hover{
+  cursor: pointer;
+  color: var(--light);
+}
+
+.button_left{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.button_left:hover{
+  cursor: pointer;
+  color: var(--light);
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+.icon_hand{
+  position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 3rem;
+
+}
+
+.video_item_main{
+  animation: fadeIn 1s ease-in-out;
+  grid-gap: 10px; /* Khoảng cách giữa các ô */
+  max-height: 80%;
+  /* box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.2); */
+  padding: 0.75rem
+}
+
+.video_item{
+  animation: fadeIn 1s ease-in-out;
+  /* box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.2); */
+  padding: 0.75rem
+}
+
+.my_video{
+  width: var(--width-my-video);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+
+.my_video_grid{
+  bottom: 8vh;
+  right: 0;
+  margin-bottom: 0.5rem;
+  z-index: 100;
+}
+
+.video_show_main{
+  top:0;
+  overflow-y: auto;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.video_show_main::-webkit-scrollbar {
+  width: 1px;
+}
+
+.video_show_main::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 1px;
+}
+
+.video_show_main::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.video_show_gid{
+  top:0;
+}
+
+.no_micro_icon{
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.3);
+  left: 0;
+  margin: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}

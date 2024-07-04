@@ -1,0 +1,48 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.toiguidi {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+  
+.page {
+    font-size: 14px;
+    color: #767676;
+    padding: 7px 12px;
+    margin-left: 2px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+  
+.active {
+    color: #767676!important;
+    border: 2px solid #DDD;
+}
+  
+.previous,
+.next {
+    color: white;
+    background: orange;
+    font-size: 14px;
+    padding: 7px 12px;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+  
+.break {
+    padding: 4px;
+    margin: 2px;
+}
+.disabled{
+    display: none;
+}
